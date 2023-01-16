@@ -1,0 +1,13 @@
+<!-- <p>home works!</p> -->
+
+<h1>Lista de Pokemons</h1>
+
+<div class="w-3/4 m-auto">
+  <div class="grid grid-cols-4 gap-4">
+    <div *ngFor="let res of data" class="bg-red-100">
+      <p class="text-center">{{res.position}}</p>
+      <img src="{{res.image}}" alt="" width="100%">
+      <p class="text-center">{{res.name}}</p>
+    </div>
+  </div>
+</div>

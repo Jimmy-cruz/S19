@@ -1,0 +1,15 @@
+<!-- <p>header works!</p> -->
+
+<div class="bg-blue-200 w-full p-8 my-4 border-4 border-red-200">
+    <div class="flex items-center">
+        <a routerLink="/" class="text-center">
+            <h2 class="text-red-400 font-bold px-6 border-2 text-[50px]">POKEDEX</h2>
+            <img src="https://digwallpapers.com/wallpapers/full/5/2/f/66181-3840x2160-pokeball-background-photo-desktop-4k.jpg"  alt="">
+        </a>
+        <h2 class="text-red-400 font-bold px-6">BUSCA TU PROPIO POKEMON</h2>
+        <input class="w-[600px] p-2 border-2 rounded-lg text-center " type="text">
+        <a [routerLink]="['/detalle']">
+            <button class="bg-black text-white px-6 py-2 rounded-lg mx-4" >Search</button>
+        </a>
+    </div>
+</div>
