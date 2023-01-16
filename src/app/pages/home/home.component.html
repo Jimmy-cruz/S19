@@ -1,13 +1,18 @@
 <!-- <p>home works!</p> -->
 
-<h1>Lista de Pokemons</h1>
-
-<div class="w-3/4 m-auto">
-  <div class="grid grid-cols-4 gap-4">
-    <div *ngFor="let res of data" class="bg-red-100">
-      <p class="text-center">{{res.position}}</p>
-      <img src="{{res.image}}" alt="" width="100%">
-      <p class="text-center">{{res.name}}</p>
+<div class="bg-green-200 border-4 border-blue-200" >
+    <div class="p-4 border-b-2 border-red-400 bg-black">
+        <h1 class="text-center font-bold text-white text-[20px]">Lista de Pokemons</h1>
     </div>
-  </div>
+    <div class="w-3/4 m-auto py-2">
+    <div class="grid grid-cols-4 gap-4">
+        <div *ngFor="let res of data" class="bg-red-100 border-4 border-black p-3 rounded-lg">
+        <!-- <p class="text-center">{{res.position}}</p> -->
+        <div class="bg-black rounded-full">
+            <img src="{{res.image}}" alt="" width="100%">
+        </div>
+        <p class="text-center font-bold mt-2">{{res.position}}. {{res.name | uppercase}}</p>
+        </div>
+    </div>
+    </div>
 </div>
